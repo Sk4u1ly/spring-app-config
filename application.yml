@@ -6,6 +6,11 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8787/eureka/}
+okta:
+  oauth2:
+    issuer: https://dev-36729666.okta.com/oauth2/default
+    audience: api://default
+      
 spring:
   zipkin:
     baseUrl: http://zipkin-svc:9411
